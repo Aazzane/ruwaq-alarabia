@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الدروس — رواق العربية</title>
+  <meta name="description" content="دروس اللغة العربية مرتّبة في خمسة مسارات: القراءة والفهم، الإملاء، الصرف والتحويل، التراكيب، والتعبير والكتابة.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="lessons">
+  <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
+  <div data-header></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="مسار التنقل">
+          <a href="index.html">الرئيسية</a><span class="sep">/</span><span>الدروس</span>
+        </nav>
+        <span class="eyebrow">مكتبة الدروس</span>
+        <h1>دروس اللغة العربية</h1>
+        <p class="lead">
+          ستة عشر درسًا موزّعة على خمسة مسارات. كل درس يبدأ بأهداف واضحة، ويشرح القاعدة بأمثلة،
+          وينتهي بخلاصة وتمرين تفاعلي.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="toolbar">
+          <div class="filter-chips" role="group" aria-label="تصفية حسب المسار">
+            <button type="button" class="filter-chip is-active" data-track-filter="all" aria-pressed="true">الكل</button>
+            <button type="button" class="filter-chip" data-track-filter="reading" aria-pressed="false">القراءة والفهم</button>
+            <button type="button" class="filter-chip" data-track-filter="imla" aria-pressed="false">الإملاء</button>
+            <button type="button" class="filter-chip" data-track-filter="sarf" aria-pressed="false">الصرف والتحويل</button>
+            <button type="button" class="filter-chip" data-track-filter="tarakib" aria-pressed="false">التراكيب</button>
+            <button type="button" class="filter-chip" data-track-filter="writing" aria-pressed="false">التعبير</button>
+          </div>
+          <label class="search-field">
+            <span class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">ابحث في الدروس</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            <input type="search" placeholder="ابحث عن درس أو قاعدة…" data-lesson-search autocomplete="off">
+          </label>
+          <span class="results-count" data-results-count></span>
+        </div>
+
+        <div class="lessons-grid" data-lessons-grid></div>
+
+        <div class="note-box" style="margin-top:34px">
+          <strong>من أين أبدأ؟</strong>
+          إن كنت تريد تحسين فهم النصوص فابدأ بمسار القراءة. وإن كانت مشكلتك في الكتابة فابدأ بالإملاء،
+          ثم التراكيب. ومسار التعبير يفيدك بعد أن تتمرّن على الجملة الصحيحة.
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="live-banner">
+          <div>
+            <span class="eyebrow">لا تدرس وحدك</span>
+            <h2>راجع الدرس في حصة مباشرة</h2>
+            <p>نختار درسًا من المسار الذي تدرسه، نلخّصه في عشر دقائق، ثم نحلّ تمارين إضافية ونجيب عن الأسئلة.</p>
+            <div class="hero-actions" style="margin:20px 0 0">
+              <a class="btn btn-light" href="live.html">مواعيد الحصص</a>
+            </div>
+          </div>
+          <div class="live-panel" data-next-live></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data-lessons.js"></script>
+  <script src="assets/js/data-quizzes.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app-pages.js"></script>
+</body>
+</html>
