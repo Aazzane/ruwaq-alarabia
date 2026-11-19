@@ -1950,7 +1950,7 @@ details .details-body p:last-child {
   height: 20px;
   border-radius: 50%;
   background: var(--bg-deep);
-  color: var(--muted);
+  color: var(--green-800);
   font-size: 0.68rem;
   font-weight: 800;
   display: grid;
